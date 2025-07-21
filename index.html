@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini Gamer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Coloque seu logo aqui -->
+    <img src="./assets/Logopng.png" alt="Logo do Site" class="logo">
+    <h1>Pergunte sobre seu jogo favorito</h1>
+  </header>
+
+  <main>
+    <form id="form">
+      <input type="text" id="apiKey" placeholder="Sua API Key do Gemini" required>
+      <select id="gameSelect" required>
+        <option value="">Selecione um jogo</option>
+        <option value="Valorant">Valorant</option>
+        <option value="League of Legends">League of Legends</option>
+        <option value="Minecraft">Minecraft</option>
+        <!-- adicione mais jogos aqui -->
+      </select>
+      <input type="text" id="questionInput" placeholder="Digite sua pergunta" required>
+      <button id="askButton" type="submit">Perguntar</button>
+    </form>
+
+    <section id="aiResponse">
+      <h2>Resposta da IA:</h2>
+      <div class="response-content">A resposta aparecerá aqui.</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
